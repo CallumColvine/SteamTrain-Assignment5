@@ -1,5 +1,5 @@
 body { 
-	background:	#525252;
+	background:	#464649;
 	font-family: arial;
 }
 
@@ -9,22 +9,65 @@ h1 {
 }
 
 p1 { 
-	position: relative;
-	left: 140px;
-	top: 80px;
-	color: white;
+	position: absolute;
+	left: 120px;
+	top: 120px;
 }
 
 p2 { 
-	position: relative;
-	left: 480px;
-	top: 80px;
-	color: white;
+	position: absolute;
+	left: 640px;
+	top: 120px;
+}
+p3 { 
+	position: absolute;
+	left: 1150px;
+	top: 120px;
 }
 
-rect{
-	fill:grey;
-	stroke:black;
-	stroke-width:5;
-	opacity:"0.5"
+p4 { 
+	position: absolute;
+	left: 1150px;
+	top: 466px;
+}
+p5 { 
+	position: absolute;
+	left: 1150px;
+	top: 830px;
+}
+
+.titles {
+    font-size: 20px;
+    color: white;
+
+}
+
+.insideBoxText{
+    font-size: 20px;
+}
+
+text {
+    font-size: 20px;
+    color: white;
+}
+
+.buyMoreGames{
+    z-index: -1;
+    position: absolute;
+    left: 1030px;
+    top: 81px;
+}
+
+.eventsBox{
+    z-index: -1;
+    position: absolute;
+    left: 1030px;
+    top: 431px;
+}
+
+.notificationsBox{
+    z-index: -1;
+    position: absolute;
+    left: 1030px;
+    top: 810px;
 }
