@@ -1,0 +1,113 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(function() {
+
+
+    var rows = $('tr');
+
+    rows.on('click', function(e) {
+        var row = $(this);
+        rows.removeClass('highlight');
+        row.addClass('highlight');
+		var list = document.getElementsByClassName("friend");
+		
+		for(var i = 0; i < list.length; i++){
+			list[i].style.display = "block";
+			
+		}
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+	$(document).on("click", "#friends .friend", function(){
+		var pic = $(this).children("img");
+		var attrID = pic.first().attr("id");
+		document.getElementById(attrID).src="Pictures/minus.gif";
+		$(this).appendTo("#curFriends");
+
+
+	});
+	$(document).on("click","#curFriends .friend", function(){
+		var img = $(this).find("img");
+		var attrID = img.first().attr("id");
+		document.getElementById(attrID).src="Pictures/plus.gif";
+		$(this).appendTo("#friends");
+
+	});
+});
+</script>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="friendsStyle.css">
+<div class="container">
+	
+
+	<div class="column">
+	<br>
+	<br>
+		<h1>Games</h1>
+		<div id ="games" class="box">
+			<table id="gamesList" class="listGames" border="0">
+				<tr>
+					<th>Guns of Icarus</th>
+				</tr>
+				<tr>
+					<th>Borderlands 2</th>
+				</tr>
+				<tr>
+					<th>Team Fortress 2</th>
+				</tr>
+				<tr>
+					<th>Left 4 Dead</th>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+	<div class="column">
+	<br>
+	<br>
+		<h1>Friends<h1>
+		<div id = "friends" class ="box">
+		
+			<div class="friend hidden">
+				<img src="Pictures/plus.gif" id="img1" class="plus">
+				Yoloswag
+			</div>
+			<div class="friend hidden">
+				<img src="Pictures/plus.gif" id="img2" class="plus">
+				thatguy
+			</div>
+			<div class="friend hidden">
+				<img src="Pictures/plus.gif" id="img3" class="plus">
+				newbpwner
+			</div>
+			<div class="friend hidden">
+				<img src="Pictures/plus.gif" id="img4" class="plus">
+				winnerz
+			</div>
+			<div class="friend hidden">
+				<img src="Pictures/plus.gif" id="img5" class="plus">
+				Katy Perry
+			</div>
+		
+		</div>
+	</div>
+	<div class ="column">
+		<h1>Invited Friends<h1>
+		<div id="curFriends" class = "box">
+		
+		</div>
+		<a href="Steamtrain%20-%20EventsPage.html">
+            <button>
+                Create event
+            </button>
+        </a>
+	</div>
+</div>
+</body>
+
+</html>

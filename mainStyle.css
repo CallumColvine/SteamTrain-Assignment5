@@ -138,3 +138,10 @@ p2_2{
     left: 510px;
     top: 190px;
 }
+
+.friendsOverlay{
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    opacity: 0.4;
+}
