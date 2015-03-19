@@ -1,0 +1,20 @@
+body { 
+  background:	#464649;
+	font-family: arial;
+
+	
+}
+span.filter{
+    width: 50px;
+}
+input{
+}
+h1 {
+	text-align: center;
+	color: white;
+}
+
+p {
+    text-align: center;
+	color: white;
+}

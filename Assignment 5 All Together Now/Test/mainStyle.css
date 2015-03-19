@@ -1,0 +1,116 @@
+body { 
+	background:	#464649;
+	font-family: arial;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+p1 { 
+	position: absolute;
+	left: 120px;
+	top: 120px;
+}
+
+p2 { 
+	position: absolute;
+	left: 640px;
+	top: 120px;
+}
+p3 { 
+	position: absolute;
+	left: 1150px;
+	top: 120px;
+}
+
+p4 { 
+	position: absolute;
+	left: 1150px;
+	top: 466px;
+}
+p5 { 
+	position: absolute;
+	left: 1150px;
+	top: 830px;
+}
+
+.titles {
+    font-size: 20px;
+    color: white;
+
+}
+
+.insideBoxText{
+    font-size: 20px;
+}
+
+text {
+    font-size: 20px;
+    color: white;
+}
+
+.buyMoreGames{
+    z-index: -1;
+    position: absolute;
+    width:400px;
+    height:350px;
+    border:0;
+    left: 1030px;
+    top: 81px;
+}
+
+.eventsBox{
+    z-index: -1;
+    position: absolute;
+    left: 1030px;
+    top: 440px;
+    width:400px;
+    height:350px;
+    border:0;
+}
+
+.notificationsBox{
+    z-index: -1;
+    position: absolute;
+    left: 1030px;
+    top: 810px;
+    width:400px;
+    height:70px;
+    border:0;
+}
+
+.exit{
+    z-index: -1;
+    position: absolute;
+    left: 942px;
+    top: 89px;
+    width: 66px;
+    height: 30px;
+    border: 0;
+    
+}
+
+.openEventsWindow{
+    position: absolute;
+    z-index: -2;
+    width:1000px;
+    height:800px;
+    border:0
+}
+
+.buyPagePicture{
+    position: absolute;
+    width: 900px;
+    height: 700px;
+    left: 1px;
+    top: 120px;
+}
+
+.eventPictureExample{
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    width: 900px;
+}

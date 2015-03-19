@@ -1,0 +1,9 @@
+Events Page Rectangle Dimensions:
+1300x800px
+
+Games/Friends & Friends/Games 
+500x800px
+
+Exit Button
+File: 70x30
+Actual: 60x25

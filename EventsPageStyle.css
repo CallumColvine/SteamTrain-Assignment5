@@ -5,6 +5,40 @@ title {
     left: 30px;
 }
 
-a {
-    margin-left: 40px
+.dropDownBoxTop{
+    position: absolute;
+    top: 300px;
+    left: 540px;
+}
+
+.details {
+    z-index: 1;
+    font-size: 20px;
+    color: white;
+}
+
+p1_1{ 
+    position: absolute;
+    z-index: 1;
+    left: 100px;
+    top: 170px;
+}
+
+p1_2{
+    position: absolute;
+    z-index: 1;
+    left: 500px;
+    top: 170px;
+}
+ 
+.dropDownBoxBot{
+    position: absolute;
+    top: 250px;
+    left: 540px;
+}
+
+.container{
+    position: absolute;
+    top: 600px;
+    left: 600px;
 }

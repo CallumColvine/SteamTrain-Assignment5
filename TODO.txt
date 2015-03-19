@@ -1,0 +1,10 @@
+Notifications 
+    - Make return to home page
+
+Specifiy which friends are going 
+    - Clarify what "Current friends means"
+    
+Change time/date
+    - Drop down menu
+    
+    

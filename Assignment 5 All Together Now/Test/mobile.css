@@ -1,0 +1,56 @@
+body { 
+  background:	#464649;
+	font-family: arial;
+}
+  h1 {
+	text-align: center;
+	color: white;
+    position:absolute;
+    transition: .5s ease;
+    top: 15%;
+    left: 35%;
+    width: 30%;
+    height: 6%;
+}
+p {
+    text-align: center;
+	color: white;
+    position:absolute;
+    transition: .5s ease;
+    top: 40%;
+    left: 40.5%;
+    width: 19%;
+    height: 6%;
+}
+img.phone {
+    position:absolute;
+    transition: .5s ease;
+    top: 1%;
+    left: 35%;
+    width: 30%;
+    height: 100%;
+}
+#accept_button {
+    position:absolute;
+    transition: .5s ease;
+    top: 73%;
+    left: 40.5%;
+    width: 9%;
+    height: 6%;
+  }
+  #decline_button {
+    position:absolute;
+    transition: .5s ease;
+    top: 73%;
+    left: 50.5%;
+    width: 9%;
+    height: 6%;
+  }
+  #home_button {
+    position:absolute;
+    transition: .5s ease;
+    top: 80%;
+    left: 42.5%;
+    width: 15%;
+    height: 8%;
+  }

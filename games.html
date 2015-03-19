@@ -1,0 +1,150 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+var num = 0;
+$(document).ready(function(){
+	$(document).on("click", "#friends .friend", function(){
+		var pic = $(this).children("img");
+		var attrID = pic.first().attr("id");
+		document.getElementById(attrID).src="minus.gif";
+		$(this).appendTo("#curFriends");
+		if(num == 0){
+			var cur = document.getElementById("gamesList");
+			cur.style.display="block";
+		}
+		num = num + 1;
+
+	});
+	$(document).on("click","#curFriends .friend", function(){
+		var img = $(this).find("img");
+		var attrID = img.first().attr("id");
+		document.getElementById(attrID).src="plus.gif";
+		$(this).appendTo("#friends");
+		if(num == 1){
+			var cur = document.getElementById("gamesList");
+			cur.style.display="none";
+		}
+		num = num - 1;
+	});
+});
+</script>
+<script>
+function makeGroup(){
+	var grpname = prompt("Please enter a name for this group");
+	if(grpname == null){
+		return;
+	}
+	var frn = document.getElementById('curFriends');
+	var grp = document.getElementById('groups');
+
+	var newhead = document.createElement("h3");
+	newhead.appendChild(document.createTextNode(grpname));
+	var newul = document.createElement("ul");
+
+
+	grp.appendChild(newhead);
+	grp.appendChild(newul);
+	$(frn).children().each(function(){
+		var str = this.textContent;
+		var newli = document.createElement("li");
+		newul.appendChild(newli);
+		newli.appendChild(document.createTextNode(str));
+		});
+	
+	
+
+
+}
+</script>
+<script>
+$(function() {
+
+
+    var rows = $('tr');
+
+    rows.on('click', function(e) {
+        var row = $(this);
+        rows.removeClass('highlight');
+        row.addClass('highlight');
+    });
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+	<link rel="stylesheet" type="text/css" href="gamesStyle.css">
+
+	<div class="column">
+		<h1>Groups</h1>
+		<div id ="groups" class="box">
+
+
+		</div>
+	</div>
+
+	<div class="column">
+		<h1>Friends</h1>
+		<div id="friends" class="box">
+			<div class="friend">
+				<img src="plus.gif" id="img1" class="plus">
+				Yoloswag
+			</div>
+			<div class="friend">
+				<img src="plus.gif" id="img2" class="plus">
+				thatguy
+			</div>
+			<div class="friend">
+				<img src="plus.gif" id="img3" class="plus">
+				newbpwner
+			</div>
+			<div class="friend">
+				<img src="plus.gif" id="img4" class="plus">
+				winnerz
+			</div>
+			<div class="friend">
+				<img src="plus.gif" id="img5" class="plus">
+				Katy Perry
+			</div>
+		</div>
+
+	</div>
+
+	<div  class="column">
+		<h1>Current Friends</h1>
+		<div id="curFriends" class="box">
+
+		</div>
+		<button onclick="makeGroup()">
+			Make Group
+		</button>
+	</div>
+
+	<div class="column">
+		<h1>Games</h1>
+		<div id="games" class="box">
+			<table id="gamesList" class="hidden" border="0">
+				<tr>
+					<th>Guns of Icarus</th>
+				</tr>
+				<tr>
+					<th>Borderlands 2</th>
+				</tr>
+				<tr>
+					<th>Team Fortress 2</th>
+				</tr>
+				<tr>
+					<th>Left 4 Dead</th>
+				</tr>
+			</table>
+		</div>
+        <a href="Steamtrain%20-%20EventsPage.html">
+            <button>
+                Create event
+            </button>
+        </a>
+	</div>
+</div>
+</body>
+</html>

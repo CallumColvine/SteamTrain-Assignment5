@@ -1,0 +1,30 @@
+body { 
+  background:	#464649;
+	font-family: arial;
+}
+
+input{
+    text-align: left;
+    float:right;
+}
+
+/* unvisited link */
+a:link {
+    color: #FFFFF;
+}
+h1 {
+	text-align: center;
+	color: white;
+}
+
+p { 
+    text-align: right;
+	color: white;
+}
+.submit { text-align: right; }
+
+.login {
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
+}

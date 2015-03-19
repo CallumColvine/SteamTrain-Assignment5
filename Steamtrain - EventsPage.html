@@ -2,20 +2,181 @@
 
 <html>
     
-    <head> 
-        <link href="main.css" rel="stylesheet">
-        <link href="EventsPageStyle.css" rel="stylesheet">
-        <link href="Pictures/Steam%20with%20Friends%20Events%20Square.png" rel="stylesheet">
-        
-        
-        <title> Steam with Friends - Events </title>
-    </head>
+<head> 
+    <link href="mainStyle.css" rel="stylesheet">
+    <link href="EventsPageStyle.css" rel="stylesheet">
+    <link href="Pictures/Steam%20with%20Friends%20Events%20Square.png" rel="stylesheet">
+
+
+    <title> Steam with Friends - Events </title>
     
-    <body>
-        <h1> Steam with Friends Events </h1>
-        <a href="Steamtrain%20-%20Homepage.html">
-            <img src="Pictures/Steam%20with%20Friends%20Events%20Square.png" style="width:1300px;height:800px;border:0">
+    <!-- PANIC THIS IS WHERE YOU ADDED CODE OKAY? -->
+    <style>
+        .demo select {
+            border: 0 !important;  
+            -webkit-appearance: none;  
+            -moz-appearance: none; 
+            background: #464649 url(img/demo/select-arrow.png) no-repeat 90% center;
+            width: 100px; 
+            text-indent: 0.01px; 
+            text-overflow: ""; 
+
+            color: #FFF;
+            border-radius: 15px;
+            padding: 5px;
+            box-shadow: inset 0 0 5px rgba(000,000,000, 0.5);
+        }
+        .demo select.balck {
+            background-color: #000;
+        }
+        .demo select.option3 {
+            border-radius: 10px 0;
+        }
+    </style>
+    
+    
+</head>
+    
+<body>
+    
+    <div class="titles">
+        <p3>
+            Buy More Games
+        </p3>
+        <p5>
+            Notifications
+	   </p5> 
+    </div>
+    
+    <div class="details">
+        <p1_1>
+            Event Details
+        </p1_1>
+        
+        <p1_2>
+            Select a Date and Time
+        </p1_2>
+    </div>
+        
+    <h1> Steam with Friends - Events </h1>
+    <div class="openEventsWindow">
+        <img src="Pictures/Steam%20with%20Friends%20Events%20Square.png">
+    </div>
+    
+    <div class="eventPictureExample">
+        <a href="Steamtrain%20-%20Homepage.html" onclick="JavaScript:alert('Invitation Sent! Return to homepage')">
+            <img src="Pictures/Current%20Game%20and%20Friends.png">
         </a>
+    </div>
     
-    </body>
+    <div class="eventPictureExample2">
+        <a href="Steamtrain%20-%20Homepage.html" onclick="JavaScript:alert('Invitation Sent! Return to homepage')">
+            <img src="Pictures/EventsPageDateAndTime.png">
+        </a>
+    </div>
+    
+    <div class="buyMoreGames"> 
+<!-- Buy More Games Picture/Link -->
+        <a href="Steamtrain%20-%20BuyPage.html">
+            <img src="Pictures/Steam%20with%20Friends%20Buy%20Games%20Square.png">
+        </a>
+    </div>
+    
+    <div class="exit"> 
+    <!-- Events Picture/Linkk -->
+        <a href="Steamtrain%20-%20Homepage.html">
+            <img src="Pictures/Exit%20Button.png">
+        </a>
+    </div>
+    
+    <div class="notificationsBox"> 
+    <!-- Events Picture/Linkk -->
+        <a href="notification.html">
+           <img src="Pictures/Steam%20with%20Friends%20Notifications%20Box.png">
+        </a>
+    </div>
+    
+    
+    <!-- THIS IS ALSO WHERE YOU ADD CODE FFFUUUU -->
+    <div class="dropDownBoxTop">
+        <form class="demo">
+            <select>
+                <option>January</option>
+                <option>Febuary</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+            </select>
+        </form>
+    </div>
+    
+    <div class="dropDownBoxBot">
+        <form class="demo">
+            <select>
+                <option>1:00</option>
+                <option>2:00</option>
+                <option>3:00</option>
+                <option>4:00</option>
+                <option>5:00</option>
+                <option>6:00</option>
+                <option>7:00</option>
+                <option>8:00</option>
+                <option>9:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>12:00</option>
+            </select>
+            <select>
+                <option>AM</option>
+                <option>PM</option>
+            </select>
+        </form>
+    </div>
+    
+    <div class="container">
+        <button type="button" class="btn">Send Invitations</button>
+    </div>
+        
+    
+</body>
         
