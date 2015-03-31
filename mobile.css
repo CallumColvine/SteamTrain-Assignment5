@@ -14,7 +14,7 @@ body {
 }
 p {
     text-align: center;
-	color: white;
+    color: white;
     position:absolute;
     transition: .5s ease;
     top: 40%;
@@ -30,27 +30,90 @@ img.phone {
     width: 30%;
     height: 100%;
 }
+
+
+.submit {
+  position: absolute;
+  left: 50%;
+  top: 130%;
+  border: none;
+  outline: none;
+  display: block;
+  width: 190px;
+  height: 60px;
+  background: url("register.png") no-repeat 0 0;
+}
+
+
 #accept_button {
-    position:absolute;
-    transition: .5s ease;
-    top: 73%;
-    left: 40.5%;
-    width: 9%;
-    height: 6%;
+  position:absolute;
+  top: 70%;
+  left: 39.8%;
+  width: 190px;
+  height: 60px;
+  border: none;
+  outline: none;
+  display: block;
+-webkit-transform: scale(1); /* Saf3.1+, Chrome */
+     -moz-transform: scale(1); /* FF3.5+ */
+      -ms-transform: scale(1); /* IE9 */
+       -o-transform: scale(1); /* Opera 10.5+ */
+          transform: scale(1);
+             /* IE6–IE9 */
+             filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
+  background: url("accept_rollover1.png") no-repeat 0 0;
   }
+
+#accept_button:hover
+{ 
+  background-position: 0 -60px;
+}
+
   #decline_button {
     position:absolute;
-    transition: .5s ease;
-    top: 73%;
-    left: 50.5%;
-    width: 9%;
-    height: 6%;
+    top: 70%;
+    left: 50%;
+   width: 190px;
+  height: 60px;
+  border: none;
+  outline: none;
+  display: block;
+-webkit-transform: scale(1); /* Saf3.1+, Chrome */
+     -moz-transform: scale(1); /* FF3.5+ */
+      -ms-transform: scale(1); /* IE9 */
+       -o-transform: scale(1); /* Opera 10.5+ */
+          transform: scale(1);
+             /* IE6–IE9 */
+             filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
+  background: url("decline_rollover.png") no-repeat 0 0;
   }
+
+#decline_button:hover
+{ 
+  background-position: 0 -60px;
+}
+
   #home_button {
-    position:absolute;
-    transition: .5s ease;
-    top: 80%;
-    left: 42.5%;
-    width: 15%;
-    height: 8%;
+   position: absolute;
+  left: 45%;
+  top: 79%;
+  transform: translate(-50%, -50%);
+  width: 190px;
+  height: 60px;
+  border: none;
+  outline: none;
+  display: block;
+-webkit-transform: scale(1.5); /* Saf3.1+, Chrome */
+     -moz-transform: scale(1.5); /* FF3.5+ */
+      -ms-transform: scale(1.5); /* IE9 */
+       -o-transform: scale(1.5); /* Opera 10.5+ */
+          transform: scale(1.5);
+             /* IE6–IE9 */
+             filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
+  background: url("home.png") no-repeat 0 0;
   }
+
+#home_button:hover
+{ 
+  background-position: 0 -60px;
+}

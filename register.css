@@ -5,27 +5,69 @@ body {
 
 
 input{
-    text-align: left;
-    float:right;
+  text-align: left;
+  float:right;
+  padding: 1px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+input:focus,
+input.focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
 }
 
-/* unvisited link */
-a:link {
-    color: #FFFFF;
+.container {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 40%;
+  height: 50%;
+
+  padding: 20px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
+
 h1 {
-	text-align: center;
-	color: white;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 50%;
 }
 
 p { 
     text-align: right;
 	color: white;
 }
-.submit { text-align: right; }
+.submit {
+  position: absolute;
+  left: 50%;
+  top: 130%;
+  border: none;
+  outline: none;
+  display: block;
+  width: 190px;
+  height: 60px;
+  background: url("register.png") no-repeat 0 0;
+}
+
+.submit:hover
+{ 
+  background-position: 0 -60px;
+}
 
 .register {
   position: relative;
   margin: 0 auto;
-  width: 350px;
+  width: 360px;
 }
